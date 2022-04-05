@@ -13,6 +13,7 @@ const updateTuit = (req, res) => {
     const tuitdIdToUpdate = req.params.tid;
     const updatedTuit = req.body;
     tuits = tuits.map(t => t._id === tuitdIdToUpdate ? updatedTuit : t);
+    // console.log(updatedTuit);
     res.sendStatus(200);
 }
 
