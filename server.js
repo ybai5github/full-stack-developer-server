@@ -11,7 +11,7 @@ const password = 951130;
 const DB_CONNECTION_STRING = `mongodb+srv://ybai5:${password}@cluster0.na98s.mongodb.net/webdev?retryWrites=true&w=majority`;
 const CONNECTION_STRING = process.env.DB_CONNECTION_STRING
     || 'mongodb://localhost:27017/webdev'
-mongoose.connect(CONNECTION_STRING);
+mongoose.connect(DB_CONNECTION_STRING);
 
 // mongoose.connect(`mongodb+srv://ybai5:${password}@cluster0.na98s.mongodb.net/webdev?retryWrites=true&w=majority`);
 
