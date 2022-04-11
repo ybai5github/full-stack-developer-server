@@ -5,7 +5,7 @@ export const findAllTuits = async () => {
     return tuits;
 }
 
-export const createTuit = async (tuit) => {
+export const createTuit = async (newTuit) => {
     const insertedTuit = await tuitsModel.create(newTuit);
     return insertedTuit;
 
