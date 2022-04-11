@@ -2,7 +2,6 @@
 // let tuits = posts;
 import * as tuitsDao from "../database/tuits-dao.js";
 
-
 const tuitController = (app) => {
     app.post('/api/tuits', createTuit);
     app.get('/api/tuits', findAllTuits);
@@ -60,10 +59,5 @@ const createTuit = async (req, res) => {
 //     tuits = tuits.filter(t => t._id !== tuitdIdToDelete);
 //     res.sendStatus(200);
 // }
-
-
-
-
-
 
 export default tuitController;
